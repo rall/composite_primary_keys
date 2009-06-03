@@ -30,6 +30,7 @@ unless defined?(ActiveRecord)
   rescue LoadError
     require 'rubygems'
     require_gem 'activerecord'
+    load 'active_record/associations.rb'
   end
 end
 
